@@ -32,6 +32,7 @@ class Paths:
     gx_dir: Path
     baseline_quality_report: Path
     corrupted_quality_report: Path
+    repaired_quality_report: Path
     freshness_report: Path
     baseline_report: Path
     corruption_log: Path
@@ -102,6 +103,7 @@ def load_settings(project_dir: Path | None = None) -> Settings:
         gx_dir=data_dir / "quality" / "gx",
         baseline_quality_report=data_dir / "quality" / "baseline_quality_report.json",
         corrupted_quality_report=data_dir / "quality" / "corrupted_quality_report.json",
+        repaired_quality_report=data_dir / "quality" / "repaired_quality_report.json",
         freshness_report=data_dir / "quality" / "freshness_report.json",
         baseline_report=data_dir / "reports" / "phase1_report.md",
         corruption_log=data_dir / "results" / "corruption_log.json",
